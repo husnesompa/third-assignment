@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Third Assignment</title>
+    <!-- ----Manrope font Link ----- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- ----- DaisyUI link ----- -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- -----font-awesome link ---- -->
     <script src="https://kit.fontawesome.com/d5270985a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" src="style.css" />
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'btn-customcolor': '#ef3811',
+                        'btn-customcolor': '#ABEF5F',
+                        'btnhover-customcolor': 'rgba(171, 239, 95, 0.5)',
+                        'menu-customcolor': '#737373',
+                        'font-customcolor': '#494949',
+                        'heading-customcolor': '#212121',
+                        'background-customcolor': '#F4F4F4',
+
+
                     }
                 }
             }
@@ -24,9 +37,112 @@
     </script>
 </head>
 
-<body>
-    <button class="btn-primary bg-btn-customcolor m-10 p-4">Next</button>
+<body class="font-sans-serif">
+    <header class="bg-neutral-100">
+        <div class="container mx-auto">
+            <!-- ----Navbar Start ----- -->
+            <div class="navbar bg-neutral-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Home</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Service</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Portfolio</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Blogs</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-arrow-right bg-btn-customcolor rounded-full p-4"></i>
+                    <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-menu-customcolor hover:text-font-customcolor">Home</a></li>
+                        <li><a class="text-menu-customcolor hover:text-font-customcolor">Service</a></li>
+                        <li><a class="text-menu-customcolor hover:text-font-customcolor">Portfolio</a></li>
+                        <li><a class="text-menu-customcolor hover:text-font-customcolor">Blogs</a></li>
+                        <li><a class="text-menu-customcolor hover:text-font-customcolor">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:navbar-end lg:gap-6 lg:block md:block">
+                    <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full text-menu-customcolor"></i>
+                    <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full text-menu-customcolor"></i>
+                    <a class="btn bg-btn-customcolor rounded-full">Book Consult <span
+                            class="bg-black text-white rounded-full p-1"><i
+                                class="fa-solid fa-arrow-right"></i></i></span></a>
+                </div>
+            </div>
+            <!-- ----Navbar End ----- -->
 
+            <!-- ----Banner Start ----- -->
+            <banner class="flex flex-col justify-center items-center py-12 min-h-screen">
+                <div>
+                    <img src="images/banner.png" class="content-center">
+                </div>
+                <div class="text-center">
+                    <h1 class="text-3xl lg:text-7xl font-bold w-4/4 mx-auto text-heading-customcolor py-6">A barn house
+                        of this design has a striking appearance</h1>
+                    <p class="font-customcolor py-4  text-lg lg:w-3/4 w-4/4 mx-auto">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal
+                        accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a
+                        class="btn bg-btn-customcolor rounded-full hover:bg-btnhover-customcolor border-green-500 w-10/12 md:w-auto">View
+                        Details <span class="bg-black text-white rounded-full p-1"><i
+                                class="fa-solid fa-arrow-right"></i></i></span></a>
+                </div>
+            </banner>
+            <!-- ----Banner End ----- -->
+        </div>
+    </header>
+    <main class="">
+        <section class="bg-background-customcolor">
+            <div class="container mx-auto w-full">
+                <div>
+                    <img class="" src="images/Vector.png">
+                </div>
+                <div class="flex flex-col md:flex-row p-10 gap-10 w-full">
+                    <div>
+                        <div>
+                            <button class="btn bg-white rounded-full py-2 px-5"> <i class="fa-solid fa-arrow-right"></i>
+                                <span>About Us</span> </button>
+                            <h2 class="text-3xl font-bold my-4">We design thoughtful,<br>
+                                liveable spaces</h2>
+                            <p class="my-4">The barn house captivates with its blend of rustic charm and<br>
+                                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                        <div class="flex flex-row bg-white py-6 pl-4 mt-8 rounded-2xl">
+                            <div><img src="images/commercial.png"></div>
+                            <div class="px-12">
+                                <h3 class="font-semibold text-xl">Commercial</h3>
+                                <p class="pt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row bg-white py-6 pl-4 rounded-2xl mt-8">
+                            <div><img src="images/residential.png"></div>
+                            <div class="px-12">
+                                <h3 class="font-semibold text-xl">Residential</h3>
+                                <p class="pt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/Rectangle.png" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
 </body>
-
 </html>

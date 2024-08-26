@@ -43,30 +43,11 @@
             <!-- ----Navbar Start ----- -->
             <div class="navbar bg-neutral-100">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-square btn-ghost lg:hidden bg-white rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" >
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Home</a></li>
-                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Service</a></li>
-                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Portfolio</a></li>
-                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Blogs</a></li>
-                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <i class="fa-solid fa-arrow-right bg-btn-customcolor rounded-full p-4 -rotate-45"></i>
+                    <i class="fa-solid fa-arrow-right bg-btn-customcolor rounded-full p-3 -rotate-45"></i>
                     <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
                 </div>
-            
-                
-                <div class="navbar-center hidden lg:flex lg:items-center">
-                    <ul class="menu menu-horizontal px-1">
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-2">
                         <li><a class="text-menu-customcolor hover:text-font-customcolor">Home</a></li>
                         <li><a class="text-menu-customcolor hover:text-font-customcolor">Service</a></li>
                         <li><a class="text-menu-customcolor hover:text-font-customcolor">Portfolio</a></li>
@@ -74,12 +55,31 @@
                         <li><a class="text-menu-customcolor hover:text-font-customcolor">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="hidden lg:navbar-end lg:gap-6 lg:block md:block">
-                    <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full text-menu-customcolor"></i>
-                    <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full text-menu-customcolor"></i>
-                    <a class="btn bg-btn-customcolor rounded-full">Book Consult <span
-                            class="bg-black text-white rounded-full p-1"><i
-                                class="fa-solid fa-arrow-right -rotate-45"></i></i></span></a>
+                <div class="navbar-end">
+                    <div class="dropdown lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-square btn-ghost bg-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Home</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Service</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Portfolio</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Blogs</a></li>
+                            <li><a class="text-menu-customcolor hover:text-font-customcolor">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden md:flex md:gap-6 md:items-center">
+                        <i class="fa-solid fa-magnifying-glass bg-white rounded-full p-2 text-menu-customcolor"></i>
+                        <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full text-menu-customcolor"></i>
+                        <a class="btn bg-btn-customcolor rounded-full">Book Consult <span
+                                class="bg-black text-white rounded-full p-1"><i
+                                    class="fa-solid fa-arrow-right -rotate-45"></i></span></a>
+                    </div>
                 </div>
             </div>
             <!-- ----Navbar End ----- -->
@@ -125,20 +125,24 @@
                         </div>
                         <div class="flex flex-row bg-white py-6 pl-4 pr-4 rounded-2xl mt-8 items-start">
                             <div class="flex-shrink-0 mb-4 md:mb-0">
-                                <img src="images/commercial.png" alt="Residential" class="w-12 h-12 md:w-16 md:h-16 lg:w-16 lg:h-16">
+                                <img src="images/commercial.png" alt="Residential"
+                                    class="w-12 h-12 md:w-16 md:h-16 lg:w-16 lg:h-16">
                             </div>
                             <div class="pl-4 md:pl-6">
                                 <h3 class="font-semibold text-xl">Commercial</h3>
-                                <p class="pt-2 text-gray-600">The barn house captivates with its blend <br class="hidden lg:inline"> of rustic charm and modern.</p>
+                                <p class="pt-2 text-gray-600">The barn house captivates with its blend <br
+                                        class="hidden lg:inline"> of rustic charm and modern.</p>
                             </div>
                         </div>
                         <div class="flex flex-row bg-white py-6 pl-4 pr-4 rounded-2xl mt-8 items-start">
                             <div class="flex-shrink-0 mb-4 md:mb-0">
-                                <img src="images/residential.png" alt="Residential" class="w-12 h-12 md:w-16 md:h-16 lg:w-16 lg:h-16">
+                                <img src="images/residential.png" alt="Residential"
+                                    class="w-12 h-12 md:w-16 md:h-16 lg:w-16 lg:h-16">
                             </div>
                             <div class="pl-4 md:pl-6">
                                 <h3 class="font-semibold text-xl">Residential</h3>
-                                <p class="pt-2 text-gray-600">The barn house captivates with its blend <br class="hidden lg:inline"> of rustic charm and modern.</p>
+                                <p class="pt-2 text-gray-600">The barn house captivates with its blend <br
+                                        class="hidden lg:inline"> of rustic charm and modern.</p>
                             </div>
                         </div>
                     </div>
@@ -234,7 +238,7 @@
                         <div class="md:mt-2">
                             <div class="md:flex border border-gray-200 rounded-2xl p-4 bg-white">
                                 <!-- <div class="w-full md:w-80 bg-cover"> -->
-                                    <div class="md:w-4/5 mx-auto overflow-hidden">
+                                <div class="md:w-4/5 mx-auto overflow-hidden">
                                     <img src="images/img1.png" class="object-cover w-full">
 
                                 </div>
@@ -252,15 +256,17 @@
                         <div class="md:w-2/4 mx-auto overflow-hidden border border-gray-200 rounded-2xl bg-white p-4">
                             <img src="images/img2.png" alt="House Image" class="object-cover w-full">
                         </div>
-                        
+
                     </div>
 
                     <!-- -----Part-:2----- -->
                     <div class="lg:flex md:space-x-2 space-y-2 md:mt-4 mt-2">
-                        <div class=" border border-gray-200 rounded-2xl bg-white md:mt-2 md:w-1/4  mx-auto overflow-hidden">
+                        <div
+                            class=" border border-gray-200 rounded-2xl bg-white md:mt-2 md:w-1/4  mx-auto overflow-hidden">
                             <img src="images/img3.png" class="p-4 object-cover w-full">
                         </div>
-                        <div class="md:flex border border-gray-200 rounded-2xl p-4 bg-white md:w-4/5  mx-auto overflow-hidden">
+                        <div
+                            class="md:flex border border-gray-200 rounded-2xl p-4 bg-white md:w-4/5  mx-auto overflow-hidden">
                             <div>
                                 <img src="images/img4.png" class="object-cover w-full">
 
